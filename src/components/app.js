@@ -1,12 +1,14 @@
 import React from 'react';
 import '../assets/css/app.scss';
 import {Route} from 'react-router-dom';
+import Header from './Header';
 import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
-import Header from './Header';
+
 import Home from './Home' ;
 import Services from './Services';
+import Nav from './Nav';
 
 export default () => { 
     return ( 
