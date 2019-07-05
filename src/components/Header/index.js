@@ -33,7 +33,7 @@ export default (props) => {
         backgroundColor:'#754b23',
         backgroundPosition:'center center',
         height:'24px',
-        width:'700px',
+        width:'100%',
         margin:'0 auto',
         
     }
