@@ -15,14 +15,13 @@ export default (props) => {
         backgroundImage: `url(${ Background1 })`,
         backgroundSize: 'cover' 
     };
-    const headerStyle2 = {
-        
-        width:'100%',
-        height:'300px',
+
+    const headerStyle2 = {        
+        width:'900px',
+        height:'280px',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
-        backgroundImage: `url(${ Background2 })`,
-         
+        backgroundImage: `url(${ Background2 })`         
     };
 
     const headerStyle3 = {
@@ -34,8 +33,7 @@ export default (props) => {
         backgroundPosition:'center center',
         height:'24px',
         width:'100%',
-        margin:'0 auto',
-        
+        margin:'0 auto'               
     }
     return (
         <div>
