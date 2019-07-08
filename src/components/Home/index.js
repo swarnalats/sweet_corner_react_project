@@ -22,6 +22,7 @@ export default (props) => {
         </section>
         
         <section style={{padding:"5px"}}>
+        
         <h1 >We can make happiness with so little!</h1>
         <p>We can provide services for Weddings, Bar & Bat Mitzvahs, Birthdays, Showers,
         Corporate Events, and any other special occasion!</p>
