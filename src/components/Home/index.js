@@ -4,10 +4,29 @@ import homePageBackground from '../../assets/images/strips2.png';
 import dotsBox2 from '../../assets/images/dots-box2.png';
 import cupcakes from '../../assets/images/cupcakes.png';
 
+const backgroundStyle = {
+    backgroundImage: `url(${homePageBackground})`,
+    float:'right',
+    width: '300px',
+    height: '450px'
+}
+
+const imageStyle = {
+    backgroundImage: `url(${dotsBox2})`,
+    float:'right',
+    width: '300px',
+    height: '450px'
+}
+
 export default (props) => {
     return (
-    <div>
-        <img style={{transform:'rotate(0)',float:'right', backgroundSize:'150px', width:'300px',height:'450px'}} src={homePageBackground} />
+    <body>    
+    <div >
+        <div style={backgroundStyle}>
+            <div style={imageStyle}>
+            </div>
+        </div>
+        
         <section style={{padding:"10px"}}> 
         <h1 >We cherish the sweet moments..</h1>
         <p>Sweet Corner's story began first from our passion for sweets, which is inspired by
@@ -33,8 +52,9 @@ export default (props) => {
         delicious cupcakes?</p>
         </section>
         <h4>delicious sweets</h4>
-        <div style={{float:"center"}}>
-        <img style={{height:"220px", margin:"0 auto"}} src={cupcakes} />
+        <div style={{float:"center",overflow:"auto"}}>
+        <img style={{height:"220px", margin:"0 auto",overflow:"auto"}} src={cupcakes} />
         </div>
-    </div>)
+    </div>
+    </body>)
 }
