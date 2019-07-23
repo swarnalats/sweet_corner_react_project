@@ -9,6 +9,8 @@ import Footer from './Footer';
 import Home from './Home' ;
 import Services from './Services';
 import Nav from './Nav';
+import Products from './Products';
+import ProductDetails from '../components/Products/product_details'; 
 
 export default () => { 
     return ( 
@@ -19,6 +21,8 @@ export default () => {
                                    
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route exact path="/products" component={Products}/>
+            <Route path="/products/:product_id" component={ProductDetails} />
             <Route exact path="/" component={Home} />
             <Route path="/Services" component={Services} />
 

@@ -1,0 +1,26 @@
+.product-item {
+    height:15em;
+    position:relative;
+    display:inline-block;       
+    left:10%;
+    top:50%;    
+}
+.imageStyle:hover {
+    background-color:blueviolet;
+    position:"absolute";
+    height:"100px";
+    width:"100px";
+    cursor: pointer;
+    border-radius:25px;
+}
+
+.productImage {
+    position:relative;
+    left:50%px;
+    margin:10px 30px;
+    padding:10px;
+    font-size: 15px;
+    float:right;
+    height:350px;
+    width:400px;
+}

@@ -45,9 +45,10 @@ import { Field, reduxForm } from 'redux-form';
 //         {        
 //         return (
             
-//             <div>
+//             <div style={{position:"absolute" float:"right" }}>
 //                 <h2>My Contact Form</h2>
 //                 <form onSubmit= { handleSubmit(this.handleFormSubmit)}>
+                   
 //                 <div className="input-field">
 //                     <label>Name</label>
 //                     <Field name="name" type="text" component="input" placeholder="Username" label="Username" validate={`${const required = value => value ? undefined : 'Required'}`}></Field>
@@ -70,6 +71,7 @@ import { Field, reduxForm } from 'redux-form';
 //                 </div> 
 //                 <button onClick={this.handleFormSubmit}>Send</button>
 //                </form>
+                
 //             </div>   
 //           );
 //         }

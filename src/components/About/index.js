@@ -4,18 +4,30 @@ import aboutPageBackground from '../../assets/images/strips1.png';
 import box1 from '../../assets/images/box1.png';
 import dotsBox1 from '../../assets/images/dots-box1.png';
 
-const backgroundBox1 = {
-    backgroundImage: 'url(${box1})',
-};
+const backgroundStyle1 = {
+    backgroundImage: `url(${aboutPageBackground})`,
+    float:'right',
+    width: '200px',
+    height: '400px'
+}
+
+const dotsBox1Image = {
+    backgroundImage: `url(${dotsBox1})`,
+    float:'right',
+    width: '100px',
+    height: '450px',
+    backgroundRepeat:"no-repeat"
+}
 
 export default (props) => {
-    const imgDots = require('../../assets/images/dots-box1.png');
     return (
     <div>
-         <div style={{position:"relative", top:"0", right:"0",backgroundImage:{backgroundBox1}, backgroundSize:'cover',backgroundRepeat:"no repeat",height:"100px",width:"100px"}}> </div>
-         <img style={{transform:'rotate(0)',float:'right', backgroundSize:'150px', width:'100px',height:'260px'}} src={aboutPageBackground} />
+         <div style={backgroundStyle1}>
+            <div style={dotsBox1Image}>
+            </div>
+        </div>
         
-        <section style={{padding:"10px"}}>
+        <section style={{padding:"10px", margin:"20px", width:"600px",color:"#754b23" }}>
             <h3>Delicious cupcakes, magical moments!</h3>
             <p>
                Sweet Corner is growing fast. Our delicious cupcakes of all sizes, shapes and
