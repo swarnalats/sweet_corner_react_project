@@ -7,27 +7,28 @@ import cupcakes from '../../assets/images/cupcakes.png';
 const backgroundStyle = {
     backgroundImage: `url(${homePageBackground})`,
     float:'right',
-    width: '300px',
+    width: '250px',
     height: '450px'
 }
 
 const imageStyle = {
     backgroundImage: `url(${dotsBox2})`,
     float:'right',
-    width: '300px',
-    height: '450px'
+    width: '100px',
+    height: '450px',
+    backgroundRepeat:"no-repeat"
 }
 
 export default (props) => {
     return (
     <body>    
-    <div >
+    <div style={{fontFamily:"arial",position:"relative"}}>
         <div style={backgroundStyle}>
             <div style={imageStyle}>
             </div>
         </div>
         
-        <section style={{padding:"10px"}}> 
+        <section style={{padding:"10px", margin:"20px", width:"600px",color:"#754b23" }}> 
         <h1 >We cherish the sweet moments..</h1>
         <p>Sweet Corner's story began first from our passion for sweets, which is inspired by
         our everyday job and also by the acknowledged weakness for sweets.</p>
@@ -40,7 +41,7 @@ export default (props) => {
         always use the finest and most natural ingredients we can find.</p>
         </section>
         
-        <section style={{padding:"5px"}}>
+        <section style={{padding:"10px", margin:"20px",width:"600px", color:"#754b23"}}>
         
         <h1 >We can make happiness with so little!</h1>
         <p>We can provide services for Weddings, Bar & Bat Mitzvahs, Birthdays, Showers,
@@ -51,9 +52,11 @@ export default (props) => {
         cupcakes make the best choice for a chic desert. How could you resist these
         delicious cupcakes?</p>
         </section>
-        <h4>delicious sweets</h4>
-        <div style={{float:"center",overflow:"auto"}}>
-        <img style={{height:"220px", margin:"0 auto",overflow:"auto"}} src={cupcakes} />
+        <div style={{height:"50px"}}>
+            <p style={{position:"absolute",fontFamily:"arial",fontSize:"20px",margin:"0 auto",left:"20%"}}>Please note you will be overwhelmed by the sweet content </p>
+        </div>
+        <div style={{backgroundColor:"red"}}>
+            <img style={{position:"absolute",height:"250px", margin:"0 auto"}} src={cupcakes} />
         </div>
     </div>
     </body>)
