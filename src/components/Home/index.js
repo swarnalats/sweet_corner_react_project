@@ -10,12 +10,11 @@ const backgroundStyle = {
     width: '250px',
     height: '450px'
 }
-
 const imageStyle = {
     backgroundImage: `url(${dotsBox2})`,
     float:'right',
     width: '100px',
-    height: '450px',
+    height: '475px',
     backgroundRepeat:"no-repeat"
 }
 
@@ -28,7 +27,7 @@ export default (props) => {
             </div>
         </div>
         
-        <section style={{padding:"10px", margin:"20px", width:"600px",color:"#754b23" }}> 
+        <section style={{margin:"20px", width:"600px",color:"#754b23" }}> 
         <h1 >We cherish the sweet moments..</h1>
         <p>Sweet Corner's story began first from our passion for sweets, which is inspired by
         our everyday job and also by the acknowledged weakness for sweets.</p>
@@ -53,10 +52,10 @@ export default (props) => {
         delicious cupcakes?</p>
         </section>
         <div style={{height:"50px"}}>
-            <p style={{position:"absolute",fontFamily:"arial",fontSize:"20px",margin:"0 auto",left:"20%"}}>Please note you will be overwhelmed by the sweet content </p>
+            <p style={{position:"absolute",fontFamily:"arial",fontSize:"20px",margin:"0 auto",left:"20%",color:"#754b23"}}>Please note you will be overwhelmed by the sweet content </p>
         </div>
-        <div style={{backgroundColor:"red"}}>
-            <img style={{position:"absolute",height:"250px", margin:"0 auto"}} src={cupcakes} />
+        <div >
+            <img style={{position:"relative",height:"250px", left:"60px"}} src={cupcakes} />
         </div>
     </div>
     </body>)

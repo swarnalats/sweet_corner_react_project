@@ -3,13 +3,13 @@ import './services.scss';
 import servicesPageBackground from '../../assets/images/strips1.png';
 import box2 from '../../assets/images/box2.png';
 
-
 export default (props) => {
     return (
     <div>
-        <img style={{transform:'rotate(0)',float:'right', backgroundSize:'150px', width:'100px',height:'500px'}} src={servicesPageBackground} />
-        <section>
-        <h3>We cherish the sweet moments...</h3>
+        <img style={{transform:'rotate(0)',float:'right', backgroundSize:'150px', width:'100px',height:'590px'}} src={servicesPageBackground} />
+        <div style={{position:"relative",left:"40px", width:"780px"}}>
+        <section style={{fontFamily:"arial",color:"#754b23"}}>
+        <h1>We cherish the sweet moments...</h1>
         <p>
             For couples looking beyond the traditional wedding Sweet Corner offers the
             modern day alternative to a traditional wedding cake. Stack your wedding cupcakes
@@ -27,8 +27,8 @@ export default (props) => {
             Higher prices may apply to custom cupcake flavors and highly detailed cupcakes
         </p>
         </section>
-        <section>
-            <h3>Party cupcakes</h3>
+        <section style={{fontFamily:"arial",color:"#754b23"}}>
+            <h1>Party cupcakes</h1>
             <p>
                 Dress it up with the Sprinkles Cupcake or keep it simple and let the cupcakes shine!
             </p>
@@ -41,8 +41,8 @@ export default (props) => {
                  $135.00+, will be based on time required and intricacy of the design.
             </p>
         </section>
-        <section>
-            <h3>Gift cupcake</h3>
+        <section style={{fontFamily:"arial",color:"#754b23"}}>
+            <h1>Gift cupcake</h1>
             <p>
                 Sending our cupcakes by post is the perfect way to say pretty much anything you
                 can think of - from Happy Birthday and Welcome to your new home, to Thanks for a
@@ -61,6 +61,7 @@ export default (props) => {
                   you choose.
             </p>
         </section>
+        </div>
         <div style={{float:"center",overflow:"auto",width:"100%",}}>
             <img style={{height:"100%", margin:"0 auto",overflow:"auto"}} src={box2}  />
         </div>

@@ -26,7 +26,6 @@ class Products extends React.Component {
     render()
     {
         const {products} = this.props; 
-        console.log("PRODUCTS...", products);
         const productElements = products.map(( prod) => {
         return <ProductItem 
                     key={prod.id}
@@ -34,7 +33,7 @@ class Products extends React.Component {
                     {...prod} />});                 
         return (
             <div className="products">
-               <h1 className="center">Show the Cupcakes</h1>               
+               <h1 style={{color:"#754b23"}}className="center">Shop for Cupcakes</h1>               
                {productElements}
             </div>
         )

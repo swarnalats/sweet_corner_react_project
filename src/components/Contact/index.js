@@ -5,9 +5,8 @@ import Schedule from '../general/schedule/index';
 
 export default (props) => {
     return (
-    <div>
-        <ContactForm />
-        
-        <Schedule />
-    </div>)
-}
+       <div>     
+            <ContactForm />
+            <Schedule />
+        </div>
+     ) }

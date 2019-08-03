@@ -7,7 +7,7 @@ import dotsBox1 from '../../assets/images/dots-box1.png';
 const backgroundStyle1 = {
     backgroundImage: `url(${aboutPageBackground})`,
     float:'right',
-    width: '200px',
+    width: '160px',
     height: '400px'
 }
 
@@ -16,19 +16,21 @@ const dotsBox1Image = {
     float:'right',
     width: '100px',
     height: '450px',
-    backgroundRepeat:"no-repeat"
+    backgroundRepeat:"no-repeat",
+    position:"relative",
+    top:"100px",    
 }
 
 export default (props) => {
     return (
-    <div>
-         <div style={backgroundStyle1}>
-            <div style={dotsBox1Image}>
-            </div>
+    <div style={{position:"relative"}} >
+         <div style={backgroundStyle1}>            
+        </div>
+        <div style={dotsBox1Image}>
         </div>
         
-        <section style={{padding:"10px", margin:"20px", width:"600px",color:"#754b23" }}>
-            <h3>Delicious cupcakes, magical moments!</h3>
+        <section style={{margin:"20px", width:"600px",color:"#754b23",fontFamily:"arial" }}>
+            <h1>Delicious cupcakes, magical moments!</h1>
             <p>
                Sweet Corner is growing fast. Our delicious cupcakes of all sizes, shapes and
                colors and tastes are creating a real wow factor.
@@ -54,8 +56,8 @@ export default (props) => {
                 to discuss you special cupcake.
             </p>
         </section>
-        <div style={{float:"center",overflow:"auto",width:"100%",}}>
-            <img style={{height:"100%", margin:"0 auto",overflow:"auto"}} src={box1}  />
+        <div style={{position:"relative"}}>
+            <img style={{position:"relative",width:"1000px",margin:"40px auto",height:"400px"}} src={box1}  />
         </div>
      </div>   )
 }

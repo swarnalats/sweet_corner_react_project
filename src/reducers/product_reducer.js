@@ -28,6 +28,7 @@ export default (state = DEFAULT_STATE, action) =>
                 details:null
             }    
         }
+        
         default:
             return state;    
     }

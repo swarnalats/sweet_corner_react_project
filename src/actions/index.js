@@ -69,4 +69,78 @@ export const clearProductDetails = () =>
 ({        
   type:types.CLEAR_PRODUCT_DETAILS
       
-})     
+})
+
+export const addItemToCart = ( quantity, productId) => async dispatch =>
+{
+    try{
+        const cartToken = localStorage.getItem('sc-cart-token');
+        const axiosConfig = {
+            headers: {
+                'X-Cart-Token': cartToken
+            }
+        }
+        
+        const BASE_URL= 'http://api.sc.lfzprototypes.com';
+        const response = await axios.post(`${BASE_URL}/api/cart/items/${productId}`, {
+            quantity:quantity
+        }, axiosConfig); 
+        
+        localStorage.setItem('sc-cart-token', response.data.cartToken);
+        dispatch({
+            type:types.ADD_ITEM_TO_CART,
+            cartTotal: response.data.total
+        });
+
+    }    
+    catch (err)
+        {
+            console.log("Something went wrong,",err);
+        }    
+}
+
+export const getActiveCart = () => async dispatch =>
+{
+    try{
+        const cartToken = localStorage.getItem('sc-cart-token');
+        const axiosConfig = {
+            headers: {
+                'X-cart-token':cartToken
+            }
+        };
+        const BASE_URL= 'http://api.sc.lfzprototypes.com';
+        const response = await axios.get(`${BASE_URL}/api/cart`, axiosConfig); 
+        console.log("RESPONE FROM ACTIE CART", response);
+
+        dispatch({
+            type:types.GET_ACTIVE_CART,
+            cart:response.data
+        })
+    }
+    catch {
+        console.log("Inside active cart catch block");
+    }
+}
+
+export const getCartTotals = () => async dispatch => {
+    try {
+        console.log("CART TOTALL CALEED");
+        const cartToken = localStorage.getItem('sc-cart-token');
+        const axiosConfig = {
+            headers: {
+                'X-cart-token':cartToken
+            }
+        };
+        const BASE_URL= 'http://api.sc.lfzprototypes.com';
+        const response = await axios.get(`${BASE_URL}/api/cart/totals`, axiosConfig);  
+        dispatch({
+            type: types.GET_CART_TOTALS,
+            total: response.data.total
+        });
+    }
+
+    catch(err){
+        console.log("error");
+    }
+
+}
