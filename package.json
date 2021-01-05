@@ -15,7 +15,7 @@
     "url": "https://github.com/Learning-Fuze/react_startehttps://github.com/swarnalats/sweet_corner_react_project.gitr.git"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
